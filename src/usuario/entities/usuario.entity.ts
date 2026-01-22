@@ -7,11 +7,11 @@ export class Usuario {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @IsEmail()
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
   nome: string;
 
+  @IsEmail()
   @IsNotEmpty()
   @Column({ length: 255, nullable: false })
   usuario: string;
