@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-floating-promises */
 import { NestFactory } from '@nestjs/core';
 import { AppModule } from './app.module';
 import { ValidationPipe } from '@nestjs/common';
@@ -7,12 +8,12 @@ async function bootstrap() {
   const app = await NestFactory.create(AppModule);
 
   const config = new DocumentBuilder()
-    .setTitle('Blog Pessoal')
-    .setDescription('Projeto Blog Pessoal')
+    .setTitle('Blog Pessoal do Matheus Carvalho')
+    .setDescription('Projeto Blog Pessoal por Matheus Carvalho')
     .setContact(
-      'Generation Brasil',
-      'http://www.generationbrasil.online',
-      'generation@email.com',
+      'Matheus Carvalho',
+      'https://www.linkedin.com/in/mcarvalho-dev/',
+      'mcarvalho093@gmail.com',
     )
     .setVersion('1.0')
     .addBearerAuth()
